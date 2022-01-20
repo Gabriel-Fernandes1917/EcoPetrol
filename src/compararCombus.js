@@ -1,5 +1,5 @@
 const prompt = require('prompt-sync')()
-const choice = require('./choice')
+//const choice = require('./choice')
 
 
 var Funcomparar =function compararFun(){
@@ -22,6 +22,7 @@ var Funcomparar =function compararFun(){
     if(restart == 1){
         compararFun()
     }else{
+        const choice = require('./choice')
         choice()
     }
 }
