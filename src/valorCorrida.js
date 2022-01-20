@@ -1,8 +1,8 @@
 const prompt = require('prompt-sync')()
-const choice = require('./choice')
+//const menus = require('./choice') pq tive que colocar dentro do else
 
-// ValorCorridaFun()
-// choice()
+
+
 var FunValor = function ValorCorridaFun(){
 
     console.log("para começar informe os seguintes valores")
@@ -14,7 +14,7 @@ var FunValor = function ValorCorridaFun(){
     infos.push(Number(prompt("Quantos Km/L você faz: ")))
     infos.push(Number(prompt("Quantos preço do L do combustivel: ")))
 
-    let resul = ((infos[1]/infos[2])*infos[0])
+    let resul = ((infos[2]/infos[1])*infos[0])
 
     console.log(`Voce terar um custo de ${resul} reais `)
     console.log("deseja fazer outra conta ? Se sim digite 1 se não digite 2 para voltar ao menu")
@@ -22,8 +22,12 @@ var FunValor = function ValorCorridaFun(){
     if(restart == 1){
         ValorCorridaFun()
     }else{
-        choice()
+        const menus = require('./choice')
+        menus()
     }
 }
+
+//ValorCorridaFun()
+//choice()
 
 module.exports = FunValor

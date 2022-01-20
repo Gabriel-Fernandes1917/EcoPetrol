@@ -17,5 +17,5 @@ var choiceFun = function choice(){
             }
             
             
- choiceFun()
+//choiceFun()
 module.exports = choiceFun
