@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assest/CSS/style.css">
+    <title>EcoPetrol</title>
+</head>
+<body onload="body()">
+    <form action="">
+        <label for="Km">Informe quantos Km vai rodar</label>
+        <input type="number" placeholder="Ex 10" id="Km">
+        <br>
+        <label for="Km/L">Quantos Km/L você faz ?</label>
+        <input type="number" placeholder="Ex 10" id="Km/L" step="0.01">
+        <br>
+        <label for="price/L">Quantos preço do L do combustivel ?</label>
+        <input type="number" placeholder="Ex 10" id="price/L" step="0.01">
+        <br>
+        <input type="button" value="calcular" onclick="ValorCorridaFun()">
+        <br>
+    </form>
+    <p id="UserResul"><strong>Resul</strong></p>
+
+
+</body>
+<script src="../assest/JS/main.js"></script>
+</html>
