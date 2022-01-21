@@ -1,11 +1,11 @@
-const prompt = require('prompt-sync')()
+//const prompt = require('prompt-sync')()
 //const menus = require('./choice') pq tive que colocar dentro do else
 
 
-
-var FunValor = function ValorCorridaFun(){
-
-    console.log("para começar informe os seguintes valores")
+ function ValorCorridaFun(){
+    alert("foi")
+    console.log("entou")
+    /*console.log("para começar informe os seguintes valores")
 
     // array [Km, Km/L, price/L]
     let infos = []
@@ -24,10 +24,12 @@ var FunValor = function ValorCorridaFun(){
     }else{
         const menus = require('./choice')
         menus()
-    }
+    }*/
 }
+
+
 
 //ValorCorridaFun()
 //choice()
 
-module.exports = FunValor
+//module.exports = FunValor
