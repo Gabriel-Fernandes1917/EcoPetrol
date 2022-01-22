@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assest/CSS/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>EcoPetrol</title>
 </head>
 <body>
@@ -12,23 +15,24 @@
         <div class="body">
             
             <form action="">
+                <!--usando o type="text" inputmode="numeric" pra tirar as "setas" do input tipo number-->
                 <label for="Km">Digite o nome de um dos combustiveis: </label>
                 <input type="text" placeholder="Ex Disel" id="nome1" autocomplete="off" >
                 <br>
                 <label for="Km/L">Digite quantos Km/L ele faz: </label>
-                <input type="number" placeholder="Ex 10" id="Km/L1" step="0.01" autocomplete="off">
+                <input type="text" inputmode="numeric" placeholder="Ex 130" id="Km/L1" step="0.01" autocomplete="off" min="0" >
                 <br>
                 <label for="price/L">Digite o preço do combustivel: </label>
-                <input type="number" placeholder="Ex 10" id="price/L1" step="0.01" autocomplete="off">
+                <input type="text" inputmode="numeric" placeholder="Ex 10" id="price/L1" step="0.01" autocomplete="off" min="0" >
                 <br>
                 <label for="Km">Digite o nome do segundo combustivel:  </label>
-                <input type="text" placeholder="Gasolina" id="nome2" autocomplete="off">
+                <input type="text" placeholder="Gasolina" id="nome2" autocomplete="off" >
                 <br>
                 <label for="Km/L">Digite quantos Km/L ele faz: </label>
-                <input type="number" placeholder="Ex 10" id="Km/L2" step="0.01" autocomplete="off">
+                <input type="text" inputmode="numeric" placeholder="Ex 10" id="Km/L2" step="0.01" autocomplete="off" min="0">
                 <br>
                 <label for="price/L">Digite o preço do combustivel: </label>
-                <input type="number" placeholder="Ex 10" id="price/L2" step="0.01" autocomplete="off">
+                <input type="text" inputmode="numeric" placeholder="Ex 10" id="price/L2" step="0.01" autocomplete="off" min="0">
                 <br>
                 <input type="button" value="calcular" onclick="compararFun()">
                 <br>

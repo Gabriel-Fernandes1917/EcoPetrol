@@ -4,9 +4,15 @@
 }
 
 body{
-    background-color: aquamarine;
-
+    --body-coler: #BEBEBE;
+    background-color: var(--body-coler);
+    --body-mainBody:#D3D3D3;
+    --button-main: #FFFAFA;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
+
+
 
 a{
     text-decoration: none;
@@ -16,9 +22,22 @@ a{
 .body{  /*top right bottom left */
     margin: 5% auto 5% auto;
     width: 70%;
-    background-color: aqua;
+    background-color: var(--body-mainBody);
     text-align: center;
     padding: 3%;
+    border-radius: 5px;
+}
+
+.introduction{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    
+}
+
+.body > form > label {
+    font-weight: bold;
 }
 
 .divOptions{
@@ -28,7 +47,7 @@ a{
     margin-bottom: 2%;
     width: 80%;
     font-weight: bold;
-    background-color: greenyellow;
+    background-color: var(--button-main);
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -38,11 +57,17 @@ a{
 
 .divOptions > form > button:hover{
     transition: 1.5s all;
-    background-color: green;
+    background-color: #DCDCDC;
     transform: scale(1.1)
 }
 
 .socialMedia > button{
     width: 30px;
     height: 30px;
+}
+
+.map{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
 }

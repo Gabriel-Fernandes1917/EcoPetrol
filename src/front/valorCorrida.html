@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assest/CSS/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>EcoPetrol</title>
 </head>
 <body >
     <main>
+        <section class="introduction">
+            <h2> Nesta pagina você checar o custo de uma corrida, seja ela a algum lugar ou ate um posto </h2>
+        </section>
         <div class="body">
-
             <form action="">
                 <label for="Km">Informe quantos Km vai rodar</label>
-                <input type="number" placeholder="Ex 10" id="Km" autocomplete="off">
+                <input type="text" inputmode="numeric" placeholder="Ex 10" id="Km" autocomplete="off">
                 <br>
                 <label for="Km/L">Quantos Km/L você faz ?</label>
-                <input type="number" placeholder="Ex 10" id="Km/L" step="0.01" autocomplete="off">
+                <input type="text" inputmode="numeric" placeholder="Ex 10" id="Km/L" step="0.01" autocomplete="off">
                 <br>
                 <label for="price/L">Quantos preço do L do combustivel ?</label>
-                <input type="number" placeholder="Ex 10" id="price/L" step="0.01" autocomplete="off">
+                <input type="text" inputmode="numeric" placeholder="Ex 10" id="price/L" step="0.01" autocomplete="off">
                 <br>
                 <input type="button" value="calcular" onclick="ValorCorridaFun()">
                 <br>
@@ -27,7 +32,11 @@
             <p id="UserResul"><strong>Resul</strong></p>
             <br>
             <button><a href="index.html">Voltar ao menu</a></button>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13415.759884613875!2d-48.48043451336812!3d-1.4564867090765212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgas%20station!5e0!3m2!1sen!2sbr!4v1642817052512!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
+
     </main>
 
 
